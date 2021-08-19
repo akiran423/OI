@@ -41,9 +41,5 @@ public class DriverUtility {
 		return cap;
 		
 	}
-	public static void main(String[] a) throws IOException {
-		DriverUtility util=new DriverUtility();
-		util.getDriver();
-	}
 
 }
