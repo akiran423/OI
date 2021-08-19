@@ -11,7 +11,4 @@ import cucumber.junit.Cucumber;
 
 public class TestRunner {
 
-	@AfterClass
-	public static void writeExtentReport() {
-	}
 }
