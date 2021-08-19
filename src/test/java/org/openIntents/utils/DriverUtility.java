@@ -16,13 +16,21 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 public class DriverUtility {
 	Properties props;
-	
+	/**
+ 	* Method to invoke Android driver
+	* with configured app in oi.properties
+ 	*/
 	public AndroidDriver<AndroidElement> getDriver() throws IOException {
 		DesiredCapabilities cap=getDesiredCapabilities();
 		AndroidDriver<AndroidElement> driver=new AndroidDriver<AndroidElement>(new URL(props.getProperty("url")),cap);
 		return driver;
 		
 	}
+	
+	/**
+ 	* Method to get desired capabilities 
+	* as configured in oi.properties
+ 	*/
 	public DesiredCapabilities getDesiredCapabilities() throws IOException {
 		FileReader reader=new FileReader("src/test/resources/oi.properties");  
 	      
