@@ -20,8 +20,8 @@ public class ShoppingLists {
 	@Given("^Open OI application$")
 	public void Open_OI_application() throws IOException {
 		log.info("Open_OI_application Execution started");
-		//DriverUtility util = new DriverUtility();
-		//driver = util.getDriver();
+		DriverUtility util = new DriverUtility();
+		driver = util.getDriver();
 		log.info(" Open_OI_application is successfully executed");
 	}
 
