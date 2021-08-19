@@ -1,0 +1,30 @@
+Pre requisites :
+................
+
+Java
+Install Node.js
+Install Android studio
+Install Emulator
+Install Appium server
+Start Appium server
+Start emulator
+
+add following environmental variables   :
+.......................................
+
+export JAVA_HOME=$(/usr/libexec/java_home)
+export MAVEN_HOME=/Users/User/apache-maven-3.8.2
+export M2=$MAVEN_HOME/bin
+export ANDROID_HOME=/Users/User/Library/Android/sdk
+export PATH=$PATH:/usr/local/git/bin:/usr/local/bin:
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/emulator
+
+How to execute :
+...............
+
+One can run through command : mvn test
+
+or in IDE can run java class : TestRunner
