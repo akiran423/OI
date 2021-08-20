@@ -9,17 +9,21 @@ import io.appium.java_client.android.AndroidElement;
 
 public class GeneralUtility {
 
-	
-	public static boolean waitForPresenceOfElementLocaTed(AndroidDriver<AndroidElement> driver, int timeLimitInSeconds, MobileElement element){
-		boolean isElementPresent=false;
-		try{
+	/**
+	 * Method to wait for given element to load before interacting to it.
+	 */
+	public static boolean waitForPresenceOfElementLocaTed(AndroidDriver<AndroidElement> driver, int timeLimitInSeconds,
+			MobileElement element) {
+		boolean isElementPresent = false;
+		try {
 			WebDriverWait wait = new WebDriverWait(driver, timeLimitInSeconds);
 			wait.until(ExpectedConditions.visibilityOf(element));
 			isElementPresent = element.isDisplayed();
-			return isElementPresent;	
-		}catch(Exception e){
+			return isElementPresent;
+		} catch (Exception e) {
 			isElementPresent = false;
 			System.out.println(e.getMessage());
 			return isElementPresent;
-		} }
+		}
+	}
 }
