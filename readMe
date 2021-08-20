@@ -28,3 +28,8 @@ How to execute :
 One can run through command : mvn test
 
 or in IDE can run java class : TestRunner
+
+
+Configurations :
+...............
+All variables related to devices and url are configured in "oi.properties" file
